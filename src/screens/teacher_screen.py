@@ -35,9 +35,6 @@ def teacher_screen():
         teacher_screen_register()
 
 
-
-
-
 def teacher_dashboard():
     teacher_data = st.session_state.teacher_data
     c1, c2 = st.columns(2, vertical_alignment='center', gap='xxlarge')
@@ -189,15 +186,6 @@ def teacher_tab_take_attendance():
     with c3:
         if st.button('Use Voice Attendance', type='primary', width='stretch', icon=':material/mic:'):
             voice_attendance_dialog(selected_subject_id)
-
-
-
-
-
-
-
-
-
 
 
 def teacher_tab_manage_subjects():
